@@ -1,0 +1,71 @@
+{
+    "definitions": {
+        "leaseType": {
+            "type": "object",
+            "customized": "leaseType",
+            "properties": {
+                "kind": {
+                    "type": "string",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "enum": [
+                                "ship"
+                            ],
+                            "title": "ship"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "truck"
+                            ],
+                            "title": "truck"
+                        }
+                    ]
+                },
+                "amount": {
+                    "type": "number"
+                },
+                "size": {
+                    "type": "string",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "enum": [
+                                "large"
+                            ],
+                            "title": "large"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "medium"
+                            ],
+                            "title": "medium"
+                        },
+                        {
+                            "type": "string",
+                            "enum": [
+                                "little"
+                            ],
+                            "title": "little"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "kind",
+                "amount",
+                "size"
+            ]
+        },
+        "date": {
+            "type": "string",
+            "customized": "date",
+            "format": "date"
+        },
+        "link": {
+            "type": "link"
+        }
+    }
+}

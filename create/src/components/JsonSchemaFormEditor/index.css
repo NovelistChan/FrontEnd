@@ -1,0 +1,11 @@
+.leaseSelectButton {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.organizationSelectButton {
+  position: absolute;
+  right: 150px;
+  top: 0px;
+}
